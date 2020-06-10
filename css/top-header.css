@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: red;
+}
+.top-header{
+    width: 100%;
+    min-width: 990px;
+    /* border-bottom: 1px solid #ddd; */
+    background-color: #e3e4e5;
+}
+.header-center{
+    margin: 0 auto;
+    width:990px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+.header-center a{
+    color:#999;
+    font-size: 12px;
+}
+.fl{
+    float: left;
+}
+#tt-mycity {
+    position: relative;
+    padding: 0 5px;
+}
+#tt-mycity:hover{
+    background-color: #fff;
+}
+#tt-mycity li>a:hover {
+    color: red;
+}
+#tt-mycity .dropdown-layer{
+    display: none;
+    position: absolute;
+    float: left;
+    left: -1px;
+    top: 30px;
+    padding: 5px;
+    width: 300px;
+    border: 1px solid #e3e4e5;
+    border-top: none;
+    background-color: #fff;
+}
+#tt-mycity .dropdown-layer div {
+    float:left;
+    width: 50px;
+    line-height: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+#tt-mycity:hover .dropdown-layer{
+    display: block;
+}
+#tt-mycity:hover .dropdown-layer a:hover{
+    display: block;
+    color: red;
+    background-color: #e3e4e5;
+}
+
+#tt-mycity .dropdown-layer .checked a{
+    display: block;
+    color: #fff;
+    background-color: red;
+}
+#tt-mycity .dropdown-layer .checked a:hover{
+    display: block;
+    color: #fff;
+    background-color: red;
+}
+
+.fr{
+    float: right;
+}
+.fr li{
+    float: left;
+}
+.fr li a{
+    padding: 5px 10px;
+    border-right: 1px solid #ccc;
+}
+.fr li:first-child a:first-child{
+    border-right: none;
+    padding: 0px;
+}
+.fr li:first-child a:last-child{
+    color: red;
+}
+.fr li:last-child a{
+    border-right: none;
+}
+.fr li a:hover{
+    color: red;
+}

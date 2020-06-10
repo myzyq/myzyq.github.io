@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/top-header.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-header">
+        <div class="header-center">
+            <ul class="fl">
+                <li id="tt-mycity">
+                    <a href="javascript:void(0);">
+                        <i class="iconfont iconfont-location"></i>
+                        <span data-id="1">北京</span>
+                    </a>
+                    <div class="dropdown-layer">
+                        <div data-id="1">
+                            <a href="#">北京</a>
+                        </div>
+                        <div data-id="2">
+                            <a href="#">上海</a>
+                        </div>
+                        <div data-id="3">
+                            <a href="#">广州</a>
+                        </div>
+                        <div data-id="4">
+                            <a href="#">深圳</a>
+                        </div>
+                        <div data-id="5">
+                            <a href="#">长沙</a>
+                        </div>
+                        <div data-id="6">
+                            <a href="#">郑州</a>
+                        </div>
+                        <div data-id="7">
+                            <a href="#">长治</a>
+                        </div>
+                        <div data-id="8">
+                            <a href="#">常州</a>
+                        </div>
+                        <div data-id="9">
+                            <a href="#">西安</a>
+                        </div>
+                        <div data-id="10">
+                            <a href="#">上山</a>
+                        </div>   
+                    </div>
+                </li>
+            </ul>
+            <ul class="fr">
+                <li>
+                    <a href="#">您好,请登录</a>
+                    <a href="#">免费注册</a>
+                </li>
+                <li>
+                    <a href="#">我的订单</a>
+                </li>
+                <li>
+                    <a href="#">我的京东</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            let checked = document.querySelector('#tt-mycity').children[0].children[1].getAttribute('data-id')
+            let citys = document.querySelector(".dropdown-layer").children
+            for (let i = 0; i < citys.length; i++) {
+                if (citys[i].getAttribute('data-id') === checked) {
+                    citys[i].className = 'checked'
+                }
+            }
+        }
+    </script>
+</body>
+</html>
